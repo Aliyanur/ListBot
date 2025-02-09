@@ -1,21 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film & Book Manager Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ListBot</title>
 </head>
 <body>
-    <h1>Интересует наш бот?</h1>
-    <p>Введите ваш e-mail, чтобы получить доступ к тестированию:</p>
+    <!-- HEADER -->
+    <header class="header flex">
+        <div class="header header__logo flex">
+            <img src="Assets/Logo.svg" alt="">
+        </div>
+        <div class="header__sandwich flex">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
 
-    <form id="email-form">
-        <input type="email" id="email" placeholder="Ваш e-mail" required>
-        <button type="submit">Отправить</button>
-    </form>
+    <!-- MAIN -->
 
-    <p id="message" style="color: green; display: none;">Ваш e-mail успешно сохранён!</p>
+    <main>
+        <div class="content flex">
+            <section class="content__img">
+                <img class="img--layer4" src="Assets/Blue Shape.svg" alt="">                
+                <img class="img--layer3" src="Assets/Pink Shape.svg" alt="">                
+                <img class="img--layer2" src="Assets/Purple Shape.svg" alt="">                
+                <img class="img--layer1" src="Assets/Hero Image (Model).png" alt="">                    
+            </section>
 
-    <script src="script.js"></script>
+            <section class="content__text">
+                <h1>Организуй свои фильмы и книги легко.</h1>
+                <p>С помощью ListBot вы можете создавать и управлять списками фильмов и книг. Получайте персональные рекомендации, отслеживайте свой прогресс и не упускайте ничего важного!</p>
+                <div class="content__text__subscribe flex">
+                    <input type="email" placeholder="Введите ваш e-mail">
+                    <button>Присоединиться</button>
+                </div>
+                <div class="content__no-spam flex">
+                    <img src="Assets/Checkmark.svg" alt="">
+                    <p>Никакого спама. Можно отписаться в любое время.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- FOOTER
+
+    <footer class="footer flex">
+        <section class="footer__links flex">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </section>
+
+        <section class="footer__help flex">
+            <div class="footer__help--img">
+                <img src="Assets/Help Avatar.svg" alt="">
+            </div>
+            <div class="footer__help--text">
+                <p>Есть вопросы?</p>
+                <h2>Поговорите со специалистом ListBot</h2>
+            </div>
+        </section>
+    </footer> -->
+
 </body>
 </html>
